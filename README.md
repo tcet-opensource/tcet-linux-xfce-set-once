@@ -36,7 +36,7 @@ wrap-mode='none'
 
 - It will mark *calamares.desktop* as a trusted file by adding its sha256sum to the *calamares.desktop's* metadata.
 
-- And finally it will remove the dconf file and .desktop from their locations.
+- And finally it will remove the xed.dconf , set_once_xfce4.sh and set_once_xfce4.desktop from their respective locations.
 
 ## Credits
 
