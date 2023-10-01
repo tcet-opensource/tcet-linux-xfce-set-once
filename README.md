@@ -1,6 +1,6 @@
 # TCET Linux Set Once
 
-TCET Linux Set Once is a package in the [tcet-linux-repo](https://github.com/tcet-opensource/tcet-linux-repo) which is used to set certain configurations in [*TCET Linux*](https://github.com/tcet-opensource/tcet-linux).
+TCET Linux Set Once is a package in the [*tcet-linux-repo*](https://github.com/tcet-opensource/tcet-linux-repo) which is used to set certain configurations in [*TCET Linux*](https://github.com/tcet-opensource/tcet-linux).
 
 
 ## Working 
