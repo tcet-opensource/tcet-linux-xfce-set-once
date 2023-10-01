@@ -32,7 +32,7 @@ scheme='cobalt'
 wrap-mode='none'
 ```
 
-- This script when executed will load the xed text editor's configuration from [*xed.dconf*](https://github.com/tcet-opensource/tcet-linux-set-once/blob/main/etc/skel/xed.dconf).These configurations include things like line count , theme , etc.
+- This script when executed will load the xed text editor's configuration from [*xed.dconf*](https://github.com/tcet-opensource/tcet-linux-set-once/blob/main/etc/skel/xed.dconf) . These configurations include things like line count , theme , etc.
 
 - It will mark *calamares.desktop* as a trusted file by adding its sha256sum to the *calamares.desktop's* metadata.
 
