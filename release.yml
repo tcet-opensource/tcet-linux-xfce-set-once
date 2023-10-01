@@ -31,7 +31,7 @@ jobs:
           github_token: ${{ secrets.PAT_TOKEN }}
           delete_release: true
           
-          - name: Release Tar File with latest
+      - name: Release Tar File with latest
         uses: ncipollo/release-action@v1
         with:
           artifacts: "*.tar.gz,checksum"
