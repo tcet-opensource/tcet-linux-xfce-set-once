@@ -24,15 +24,15 @@ jobs:
       - name: Set current date as environment variable
         run: echo "DATE=`date +'%Y.%m.%d'`" >>$GITHUB_ENV
 
-      - name: Building TCET Linux set-once Tar file
+      - name: Building TCET Linux Xfce set-once Tar file
         run: |
           cd ..
-          touch tcet-linux-set-once.tar.gz
-          tar -czf tcet-linux-set-once.tar.gz tcet-linux-set-once/
+          touch tcet-linux-xfce-set-once.tar.gz
+          tar -czf tcet-linux-xfce-set-once.tar.gz tcet-linux-xfce-set-once/
           touch checksum
-          sha256sum tcet-linux-set-once.tar.gz > checksum
-          mv checksum tcet-linux-set-once/
-          mv tcet-linux-set-once.tar.gz tcet-linux-set-once/
+          sha256sum tcet-linux-xfce-set-once.tar.gz > checksum
+          mv checksum tcet-linux-xfce-set-once/
+          mv tcet-linux-xfce-set-once.tar.gz tcet-linux-xfce-set-once/
           
       - name: Checking if release with date tag exist
         run: |
@@ -63,10 +63,10 @@ jobs:
           gh release delete latest
       - name: Release Tar File
         run: |
-          gh release create ${{ env.DATE }} *tar.gz checksum --title "TCET-Linux set-once"
+          gh release create ${{ env.DATE }} *tar.gz checksum --title "TCET-Linux Xfce set-once"
       - name: Release Tar File with latest
         run: |
-          gh release create latest *tar.gz checksum --latest --title "TCET-Linux set-once"
+          gh release create latest *tar.gz checksum --latest --title "TCET-Linuxv Xfce set-once"
       - name: Triggered PKGBUILD Action
         run: |
           curl -L \
